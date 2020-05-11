@@ -1,0 +1,18 @@
+<h1>
+  {{title}}
+</h1>
+<h2>Current Lang is {{currentLang}}</h2>
+
+<div>
+  <button (click)="changeLang('en')">English</button>
+  <button (click)="changeLang('ja')">Japanese</button>
+</div>
+<div></div>
+<div>
+  <button routerLink="/customers">Customers</button>
+  <button routerLink="/orders">Orders</button>
+  <button routerLink="">Home</button>
+</div>
+
+<router-outlet></router-outlet>
+
